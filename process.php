@@ -4,9 +4,14 @@ include("conect_to_database.php");
 
 
 $consulta = mysqli_query($conection,"SELECT nombre FROM usuarios");
-echo "<h2>usuarios</h2>";
+echo "<h2>Usuarios</h2>";
 while($row= mysqli_fetch_assoc($consulta)){
 	echo "<li>" . $row['nombre'] . "</li>" . PHP_EOL;
+}
+$consulta2 = mysqli_query($conection,"SELECT provincia FROM departamento");
+echo "<h2>Provincia de usuarios </h2>";
+while($row= mysqli_fetch_assoc($consulta2)){
+	echo "<li>" . $row['provincia'] . "</li>" . PHP_EOL;
 }
 
 
