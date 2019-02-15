@@ -1,0 +1,40 @@
+body{
+	background-color: #222;
+}
+*{
+	text-align: center;
+}
+li{
+	font-weight: 700;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: white;
+	margin-top: .5em;
+}
+h1{
+	color: orange;
+	font-family: sans-serif;
+}h2{
+	color: orange;
+	font-family: sans-serif;
+}
+a{
+	color: white;
+	font-family: sans-serif;
+	font-size: 20px;
+	margin:1em;
+	display: inline-block;
+	color: gold;
+	text-decoration: none;
+	transition: 1s;
+ 	color: orange;
+}
+@keyframes anim{
+	to{
+	transform: translateX(0);
+	}
+}
+a:hover{
+	transition: 1s;
+	transform: scale(.9);
+}
